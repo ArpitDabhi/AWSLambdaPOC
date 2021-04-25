@@ -20,8 +20,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./AWSLambdaPOC.sln
     - name: Build
-      run: dotnet build ./AWSLambdaPOC/AWSLambdaPOC/AWSLambdaPOC.csproj  --no-restore --configuration Release
+      run: dotnet build ./AWSLambdaPOC/AWSLambdaPOC.csproj --no-restore --configuration Release
     - name: Publish
-      run: dotnet publish ./AWSLambdaPOC/AWSLambdaPOC/AWSLambdaPOC.csproj --no-restore --output AWSLambdaPOC_Publish --configuration Release
+      run: dotnet publish ./AWSLambdaPOC/AWSLambdaPOC.csproj --no-restore --output AWSLambdaPOC_Publish --configuration Release
     # - name: Test
      # run: dotnet test --no-build --verbosity normal
