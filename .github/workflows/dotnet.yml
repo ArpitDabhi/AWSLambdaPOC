@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore ./AWSLambdaPOC/AWSLambdaPOC.sln
+      run: dotnet restore ./AWSLambdaPOC.sln
     - name: Build
       run: dotnet build ./AWSLambdaPOC/AWSLambdaPOC/AWSLambdaPOC.csproj  --no-restore --configuration Release
     - name: Publish
