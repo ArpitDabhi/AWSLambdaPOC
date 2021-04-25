@@ -38,3 +38,8 @@ jobs:
         # List of excluded files / directories
         #exclusions: # optional, default is 
         # Tool to use for archiving
+    - name : Artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: my-artifact
+        path: ${{ github.workspace }}/AWSLambdaPOC_Publish/AWSLambdaPOC_Publish.zip
